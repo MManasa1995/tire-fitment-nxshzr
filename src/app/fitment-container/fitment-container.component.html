@@ -12,9 +12,6 @@
   <span class="header">MAKE </span>
   <span class="header">MODEL </span>
   <span class="header">STYLE </span><br /><br />
-  <!-- <span class="divStyle" *ngFor="let item of years">
-    <button class="btnStyle" (click)="getMake(item)">{{item}}</button>
-  </span> -->
   <li (click)="getMake(item)" *ngFor="let item of years">{{item}}</li>
 </div>
 
@@ -27,9 +24,6 @@
   <span class="header">STYLE </span><br /><br />
   <div class="message">Vehicle: {{year}}</div>
   <br />
-  <!-- <span class="divStyle" *ngFor="let item of makes">
-    <button class="btnStyle" (click)="getModel(item)">{{item}}</button>
-  </span> -->
   <li (click)="getModel(item)" *ngFor="let item of makes">{{item}}</li>
 </div>
 
@@ -42,9 +36,6 @@
   <span class="header">STYLE </span><br /><br />
   <div class="message">Vehicle: {{year}}, {{make}} </div>
   <br />
-  <!-- <span class="divStyle" *ngFor="let item of models">
-    <button class="btnStyle" (click)="getStyle(item)">{{item}}</button>
-  </span> -->
   <li (click)="getStyle(item)" *ngFor="let item of models">{{item}}</li>
 </div>
 
@@ -57,9 +48,6 @@
   <span class="header" style="color:blue !important;">STYLE </span><br /><br />
   <div class="message">Vehicle: {{year}}, {{make}}, {{model}}</div>
   <br />
-  <!-- <span class="divStyle" *ngFor="let item of styles">
-    <button class="btnStyle" (click)="getSelectedData(item)">{{item}}</button>
-  </span> -->
   <li style="width:25% !important;" (click)="getSelectedData(item)" *ngFor="let item of styles">{{item}}</li>
 </div>
 
